@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <tr>
+	  <td>
+		<table
+		  border="0"
+		  bgcolor="grey"
+		  align="center"
+		  cellpadding="1"
+		  width="100%"
+		   >
+		   <tr>
+			<td>
+			  <table
+				border="0"
+				bgcolor="#E22D2D"
+				align="center"
+				cellpadding="5"
+				width="100%" >
+				<tr>
+				  <th align="center">
+				   <font size="6">
+					   Прогноз соотношения "матрица-наполнитель"
+				   </font>
+			  </th>
+
+		  </tr>
+		  </table>
+		</td>
+	  </tr>
+ </head>
+ <body>
+
+
+
+  <table
+    border="1"
+    bordercolor = "grey"
+    align="center"
+    width="800px">
+
+            <tr>
+              <td>
+                <table
+                  border="0"
+                  bgcolor="#FAEBD7"
+                  align="center"
+                  cellpadding="1"
+                  width="100%"
+                   >
+                   <tr>
+                    <td>
+                      <table
+                        border="0"
+                        bgcolor="#E22D2D"
+                        align="center"
+                        cellpadding="5"
+                        width="100%" >
+                        <tr>
+                          <th align="center">
+                           <font color="black" size="5">
+                              Прогнозное значение:
+                           </font>
+                          </th>
+
+                      </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+                    <tr>
+                         <td>
+                           <table
+                             border="0"
+                             bgcolor="grey"
+                             align="left"
+                             cellpadding="5"
+                             width="100%"
+                             >
+                             <tr>
+                               <th align="center">
+                                <font color="black" size="15">
+                                   {% if message %}
+                                   <p>{{ message }}</p>
+                                    {% endif %}          
+                                </font>
+                               </th>
+
+                           </tr>
+                           </table>
+                         </td>
+                    </tr>
+
+
+    <form action="" method="post">
+
+        <p>
+            <p>
+            <label for="param1">Плотность, кг/м3</label>
+            <input type="float" name="param1" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param2">Модуль упругости, ГПа</label>
+            <input type="float" name="param2" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param3">Количество отвердителя, м.%</label>
+            <input type="float" name="param3" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param4">Содержание эпоксидных групп,%_2</label>
+            <input type="float" name="param4" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param5">Температура вспышки, С_2</label>
+            <input type="float" name="param5" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param6">Поверхностная плотность, г/м2</label>
+            <input type="float" name="param6" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param7">Модуль упругости при растяжении, ГПа</label>
+            <input type="float" name="param7" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param8">Прочность при растяжении, МПа</label>
+            <input type="float" name="param8" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param9">Потребление смолы, г/м2</label>
+            <input type="float" name="param9" placeholder="Введите число">
+            </p>
+            
+            <p>
+            <label for="param10"> Угол нашивки, град</label>
+            <input type="float" name="param10" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param11">Шаг нашивки</label>
+            <input type="float" name="param11" placeholder="Введите число">
+            </p>
+
+            <p>
+            <label for="param12">Плотность нашивки</label>
+            <input type="float" name="param12" placeholder="Введите число">    
+            </p>
+
+             <p>
+            <input type="submit">
+            </p>
+    </form>
+
+</body>
+
+</html>
